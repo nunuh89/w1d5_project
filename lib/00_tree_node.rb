@@ -50,6 +50,10 @@ class PolyTreeNode
     old_parent.remove(self) unless old_parent.nil?
   end
 
+  # def count
+  #   children.map(&:count).inject(:+)
+  # end
+
   def bfs(target)
     queue = [self]
     until queue.empty?
